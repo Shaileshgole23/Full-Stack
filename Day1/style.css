@@ -1,0 +1,179 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f8f9fa;
+    color: #222;
+}
+
+header {
+    background: #2d3e50;
+    color: #fff;
+    padding: 1.5rem 0 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+figure {
+    float: left;
+    margin: 0 2rem 1rem 0;
+    width: 160px;
+}
+
+figure img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #2d3e50;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: #2d3e50;
+}
+
+h2 {
+    color: #2d3e50;
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background: #f4f8fb;
+    font-size: 0.98rem;
+}
+
+th, td {
+    border: 1px solid #b0bec5;
+    padding: 0.7rem 0.4rem;
+    text-align: center;
+}
+
+thead th {
+    background: #2d3e50;
+    color: #fff;
+    font-weight: 600;
+}
+
+tbody th {
+    background: #e3eaf2;
+    color: #2d3e50;
+    font-weight: 600;
+}
+
+tbody td {
+    background: #39ba39;
+}
+
+tbody tr:nth-child(even) td {
+    background: #f0f4f8;
+}
+
+.holiday {
+    background: #ffe0e0 !important;
+    color: #c0392b;
+    font-weight: bold;
+}
+
+tfoot td {
+    background: #e3eaf2;
+    color: #2d3e50;
+    font-style: italic;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #2d3e50;
+    color: #fff;
+    margin-top: 2rem;
+    border-radius: 0 0 10px 10px;
+}
+
+p {
+    font-weight: bold;
+}
+
+/* Profile image floats left on desktop, stacks on mobile */
+figure {
+    float: left;
+    margin: 0 2rem 1rem 0;
+    width: 160px;
+}
+
+@media (max-width: 700px) {
+    figure {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem auto;
+        text-align: center;
+    }
+}
+
+/* Ensure sections after bio are not affected by float */
+#education, #skills, #contact, #timetable {
+    clear: both;
+    padding-top: 1rem;
+}
+
+/* Timetable section styling */
+#timetable {
+    margin-top: 2.5rem;
+    padding: 2rem 1rem;
+    background: #f7fafd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+    border: 1px solid #e0e0e0;
+}
+
+/* Center the table */
+#timetable table {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(44,62,80,0.07);
+}

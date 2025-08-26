@@ -1,0 +1,353 @@
+/* CSS Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Element Selectors with Different Color Formats */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa; /* HEX format */
+  color: rgb(51, 51, 51); /* RGB format */
+}
+
+h1 {
+  color: hsl(220, 70%, 25%); /* HSL format - deep blue */
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: rgba(34, 139, 34, 0.9); /* RGBA format - forest green with transparency */
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #228b22;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  color: #2c5aa0; /* HEX format - medium blue */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  color: rgb(220, 20, 60); /* RGB format - crimson */
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: rgba(51, 51, 51, 0.8); /* RGBA format with transparency */
+}
+
+strong {
+  color: hsl(0, 70%, 45%); /* HSL format - red tone */
+  font-weight: 700;
+}
+
+/* ID Selectors */
+#company-logo {
+  color: #1a365d; /* HEX format - dark blue */
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Class Selectors */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, hsl(220, 70%, 25%), rgba(34, 139, 34, 0.8));
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.lead-text {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.9); /* RGBA format for semi-transparent white */
+  font-style: italic;
+}
+
+.content-section {
+  padding: 3rem 0;
+  background-color: rgb(255, 255, 255); /* RGB format - white */
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.value-card {
+  background-color: #f1f5f9; /* HEX format - light gray */
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid hsl(220, 70%, 50%); /* HSL format - blue accent */
+  transition: transform 0.3s ease;
+}
+
+.featured {
+  background-color: rgba(34, 139, 34, 0.1); /* RGBA format - light green background */
+  border-left-color: rgb(34, 139, 34); /* RGB format - green accent */
+}
+
+.lists-section {
+  background-color: hsl(210, 20%, 96%); /* HSL format - very light blue-gray */
+  padding: 3rem 0;
+}
+
+.lists-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.team-section {
+  padding: 3rem 0;
+  background-color: rgba(248, 249, 250, 0.8); /* RGBA format */
+}
+
+.team-section h2::first-letter {
+  color: red;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.team-member {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.role {
+  color: hsl(220, 50%, 60%); /* HSL format - medium blue */
+  font-weight: 500;
+}
+
+/* Attribute Selectors */
+[data-highlight="true"] {
+  background-color: rgba(255, 235, 59, 0.3); /* RGBA format - light yellow highlight */
+  padding: 1rem;
+  border-left: 4px solid #ffc107; /* HEX format - yellow accent */
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+a[href^="#"] {
+  color: rgb(28, 100, 242); /* RGB format - blue links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Pseudo-class Selectors */
+a:hover {
+  color: hsl(220, 100%, 40%); /* HSL format - darker blue on hover */
+  text-decoration: underline;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.nav-menu li:first-child a {
+  color: rgba(220, 20, 60, 0.8); /* RGBA format - crimson for first nav item */
+}
+
+.nav-menu li:last-child a {
+  background-color: #22c55e; /* HEX format - green background for last item */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.team-member:nth-child(even) {
+  background-color: hsl(210, 25%, 98%); /* HSL format - very light blue */
+}
+
+.active {
+  color: rgb(220, 20, 60) !important; /* RGB format - crimson for active state */
+  font-weight: bold;
+}
+
+/* Pseudo-element Selectors */
+h2::before {
+  content: "★ ";
+  color: #ffd700; /* HEX format - gold star */
+  font-size: 1.2em;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ff6b6b, rgb(255, 235, 59), hsl(120, 60%, 50%), rgba(74, 144, 226, 0.8));
+}
+
+.team-member::before {
+  content: "👤";
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Unordered List Styling - Movies */
+.movies {
+  list-style: none;
+  padding: 0;
+}
+
+.movies li {
+  background-color: rgba(255, 255, 255, 0.8); /* RGBA format */
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  border-radius: 6px;
+  border-left: 3px solid hsl(210, 15%, 80%); /* HSL format - light gray */
+  transition: all 0.3s ease;
+}
+
+.movies li::before {
+  content: "🎬 ";
+  margin-right: 0.5rem;
+}
+
+/* Favorite movies styling */
+.movies .favorite {
+  background-color: rgba(255, 193, 7, 0.2); /* RGBA format - light yellow */
+  border-left-color: #ffc107; /* HEX format - yellow */
+  font-weight: bold;
+  transform: scale(1.02);
+}
+
+.movies .favorite::before {
+  content: "⭐ ";
+  color: rgb(255, 193, 7); /* RGB format - yellow star */
+}
+
+.movies li:hover {
+  background-color: rgba(74, 144, 226, 0.1); /* RGBA format - light blue on hover */
+  border-left-color: hsl(220, 70%, 50%); /* HSL format - blue */
+  transform: translateX(5px);
+}
+
+/* Ordered List Styling - Cities */
+.cities {
+  counter-reset: city-counter;
+  list-style: none;
+  padding: 0;
+}
+
+.cities li {
+  counter-increment: city-counter;
+  background-color: rgb(248, 250, 252); /* RGB format - very light blue */
+  margin-bottom: 0.8rem;
+  padding: 1.2rem;
+  border-radius: 8px;
+  border: 2px solid rgba(59, 130, 246, 0.2); /* RGBA format - light blue border */
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.cities li::before {
+  content: counter(city-counter);
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: hsl(220, 70%, 50%); /* HSL format - blue */
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.cities li:nth-child(odd) {
+  background-color: rgba(34, 197, 94, 0.05); /* RGBA format - very light green */
+  border-color: hsl(142, 76%, 36%); /* HSL format - green */
+}
+
+.cities li:nth-child(odd)::before {
+  background-color: rgb(34, 197, 94); /* RGB format - green */
+}
+
+.cities li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-color: #3b82f6; /* HEX format - blue */
+}
+
+/* Navigation Styling */
+nav {
+  background-color: rgba(255, 255, 255, 0.95); /* RGBA format */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+/* Footer Styling */
+footer {
+  background-color: hsl(220, 15%, 20%); /* HSL format - dark gray */
+  color: rgba(255, 255, 255, 0.8); /* RGBA format - semi-transparent white */
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.footer-note {
+  color: rgb(156, 163, 175); /* RGB format - light gray */
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .lists-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
